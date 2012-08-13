@@ -1,0 +1,2 @@
+Main-Class: install
+Class-Path: ../lib/mysql-connector-java-5.0.8-bin.jar ../lib/mysql-connector-mxj-gpl-5-0-12.jar ../lib/mysql-connector-mxj-gpl-5-0-12-db-files.jar
