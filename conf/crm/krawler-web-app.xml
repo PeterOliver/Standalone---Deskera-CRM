@@ -6,12 +6,12 @@
 
 <property>
   <name>forum_base_url</name>
-  <value>http://192.168.0.221/deskerasupport/</value>
+  <value>http://localhost:7070/apps/</value>
 </property>
-<property>
+<!--property>
   <name>soap_server_url</name>
-        <value>http://192.168.0.101/krawlercrm51/</value>
-</property>
+  <value>http://192.168.0.111/krawlercrm51/</value>
+</property-->
 <property>
   <name>mysql_user</name>
   <value>krawler</value>
@@ -30,11 +30,11 @@
 </property>
 <property>
   <name>base_urlformat</name>
-        <value>http://localhost:8084/crm/a/%s/</value>
+        <value>http://localhost:7070/crm/a/%s/</value>
     </property>
     <property>
       <name>base_urlformat_unprotected</name>
-      <value>http://localhost:8084/crm/b/%s/</value>
+      <value>http://localhost:7070/crm/b/%s/</value>
     </property>
      <property>
           <name>do_not_disable_deskera_tour</name>
@@ -46,15 +46,15 @@
     </property>
     <property>
         <name>tempFilePath</name>
-        <value>_tempFilePath</value>
+        <value>/tmp/store/CRM/tempImage.html</value>
     </property>
     <property>
         <name>imageOutputFile</name>
-        <value>_imageOutputFile</value>
+        <value>/tmp/store/CRM/imageTemp.png</value>
     </property>
     <property>
         <name>ProfileImagePathBase</name>
-        <value>/tmp/store</value>
+        <value>/tmp/store/</value>
     </property>
     <property>
         <name>SMTPPath</name>
@@ -66,11 +66,11 @@
     </property>
     <property>
         <name>NewsLetterAddress</name>
-        <value>demo@deskera.com</value>
+        <value>newsletters@deskera.com</value>
     </property>
     <property>
-		<name>remoteapikey</name>
-		<value>krawler</value>
+	<name>remoteapikey</name>
+	<value>krawler</value>
     </property>
     <property>
         <name>DocStorePath0</name>
@@ -82,14 +82,14 @@
     </property>
     <property>
         <name>SERVER_TIMEZONE</name>
-        <value>+05:30</value>
+        <value>-05:00</value>
     </property>
     <property>
         <name>audittrailindex</name>
         <value>/tmp/store/CRM/audit/audittrailindex</value>
 	</property><property>
         <name>audittraildocindex</name>
-        <value>/tmp/storeCRM/audit/audittraildocindex</value>
+        <value>/tmp/store/CRM/audit/audittraildocindex</value>
     </property>
     <property>
         <name>CrmClassPath</name>
@@ -107,28 +107,41 @@
         <name>UploadTempDir</name>
         <value>/tmp</value>
     </property>
-	<!--property>
+	<property>
         <name>platformURL</name>
-        <value>http://192.168.0.141:8084/deskeraplatform/</value>
-    </property-->
+        <value>http://localhost:7070/apps/</value>
+    </property>
 	<property>
         <name>projectManagementURL</name>
-        <value>http://192.168.0.111:8084/KrawlerESP/</value>
+        <value>http://localhost:7070/project/</value>
     </property>
-	<!--property>
+	<property>
         <name>hrmsURL</name>
-        <value>http://192.168.0.229:8084/HrmsSpring/</value>
-    </property-->
+        <value>http://localhost:7070/hrms/</value>
+    </property>
 	<property>
         <name>accURL</name>
-        <value>http://192.168.0.4:8084/Accounting/</value>
+        <value>http://localhost:7070/accounting/</value>
     </property>
 	<property>
         <name>crmURL</name>
-        <value>http://192.168.0.101:8084/crm/</value>
+        <value>http://localhost:7070/crm/</value>
     </property>
     <property>
         <name>logUnknownUser</name>
-        <value>false</value>
+        <value>true</value>
     </property>
+    <!--property>
+        <name>secutech_companyid</name>
+        <value>0d61c839-2027-4714-b0dd-8fb92d9ff9fa</value>
+    </property>
+    <property>
+        <name>sunrise_companyid</name>
+        <value>a4792363-b0e1-4b67-992b-2851234d5ea6</value>
+    </property-->
+    <property>
+    	<name>CRMStandAlone</name>
+	<value>true</value>
+    </property>
+    
 </krawler-conf>
